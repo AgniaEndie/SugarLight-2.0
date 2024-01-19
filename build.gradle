@@ -81,7 +81,9 @@ minecraft {
                 }
             }
         }
-
+        client {
+            // this block needs to be here for runClient to exist
+        }
 
         server {
             args '--nogui'

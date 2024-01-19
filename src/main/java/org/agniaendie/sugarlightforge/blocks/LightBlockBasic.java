@@ -5,13 +5,13 @@ import net.minecraft.block.BlockState;
 
 import java.util.function.ToIntFunction;
 
-public class LightBlock extends Block {
-    public LightBlock(Properties properties) {
+public class LightBlockBasic extends Block {
+    public LightBlockBasic(Properties properties) {
         super(properties);
         ToIntFunction<BlockState> lightEmission = (property) -> {
             return 12;
         };
         properties.lightLevel(lightEmission);
     }
-    
+
 }
