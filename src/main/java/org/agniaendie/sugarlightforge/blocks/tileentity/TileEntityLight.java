@@ -24,7 +24,7 @@ public class TileEntityLight extends TileEntity {
     @Override
     public void load(BlockState state, CompoundNBT nbt){
         nbt.getInt("sugar_level");
-        System.out.println(nbt.getInt("sugar_level"));
+        //System.out.println(nbt.getInt("sugar_level"));
         super.load(state,nbt);
     }
 
@@ -32,7 +32,7 @@ public class TileEntityLight extends TileEntity {
     public CompoundNBT save(CompoundNBT nbt){
         //nbt.put("sugar_level", IntNBT.valueOf(lightLevel));
         nbt.putInt("sugar_level", lightLevel);
-        System.out.println(lightLevel + "lightLevel");
+        //System.out.println(lightLevel + "lightLevel");
         return super.save(nbt);
     }
 

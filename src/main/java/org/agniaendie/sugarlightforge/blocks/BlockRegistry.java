@@ -6,8 +6,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.function.ToIntFunction;
 
 public class BlockRegistry {
